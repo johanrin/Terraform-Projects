@@ -11,9 +11,9 @@ steps:
     command: 'init'
     workingDirectory: '12-CI-CD-Pipelines/Azure-Devops/AKS'
     commandOptions: '-var="Name=$(Name)" -var="resourceGroup=$(resourceGroup)" -var="clientID=$(clientID)" -var="clientSecret=$(clientSecret)" -var="location=$(location)"'
-    backendServiceArm: 'Mike-Pay-As-You-Go (220284d2-6a19-4781-87f8-5c564ec4fec9)'
-    backendAzureRmResourceGroupName: 'Dev10'
-    backendAzureRmStorageAccountName: 'cloudskillstfstate92'
+    backendServiceArm: 'Visual Studio Professional Subscription(6854ec60-75fe-4b66-81b1-789cc0ef7063)'
+    backendAzureRmResourceGroupName: 'myTempoRG'
+    backendAzureRmStorageAccountName: 'johanrin'
     backendAzureRmContainerName: 'tfstate'
     backendAzureRmKey: 'tf/terraform.tfstate'
 
@@ -23,4 +23,4 @@ steps:
     command: 'apply'
     workingDirectory: '12-CI-CD-Pipelines/Azure-Devops/AKS'
     commandOptions: '-var="Name=$(Name)" -var="resourceGroup=$(resourceGroup)" -var="clientID=$(clientID)" -var="clientSecret=$(clientSecret)" -var="location=$(location)"'
-    environmentServiceNameAzureRM: 'Mike-Pay-As-You-Go (220284d2-6a19-4781-87f8-5c564ec4fec9)'
+    environmentServiceNameAzureRM: 'Visual Studio Professional Subscription(6854ec60-75fe-4b66-81b1-789cc0ef7063)'
